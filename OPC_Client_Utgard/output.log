@@ -1,1 +1,20 @@
-2014-12-09 09:49:21,205 INFO  com.freud.dcom.utgard.cases.DCOMTest5.main:67 - test
+2018-04-27 22:24:26,319 INFO  org.openscada.opc.lib.da.Server.connect:106 - Socket timeout: 0 
+2018-04-27 22:24:56,464 INFO  org.openscada.opc.lib.da.Server.connect:140 - Failed to connect to server
+org.jinterop.dcom.common.JIException: An internal error occurred. [0x8001FFFF]
+	at org.jinterop.dcom.core.JIComServer.init(JIComServer.java:546)
+	at org.jinterop.dcom.core.JIComServer.initialise(JIComServer.java:458)
+	at org.jinterop.dcom.core.JIComServer.<init>(JIComServer.java:427)
+	at org.openscada.opc.lib.da.Server.connect(Server.java:117)
+	at com.freud.opc.utgard.cases.OPCTest2.main(OPCTest2.java:30)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Unknown Source)
+	at sun.nio.ch.Net.connect(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.connect(Unknown Source)
+	at java.nio.channels.SocketChannel.open(Unknown Source)
+	at org.jinterop.dcom.transport.JIComTransport.attach(JIComTransport.java:98)
+	at rpc.Stub.attach(Stub.java:105)
+	at org.jinterop.dcom.core.JIComServer.init(JIComServer.java:523)
+	... 4 more
+2018-04-27 22:24:56,481 INFO  org.openscada.opc.lib.da.Server.cleanup:156 - Destroying DCOM session...
+2018-04-27 22:24:56,484 INFO  org.openscada.opc.lib.da.Server.cleanup:177 - Destroying DCOM session... forked
