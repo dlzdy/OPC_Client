@@ -15,3 +15,5 @@ bin/
 target/
 /workspace
 *.log
+*.classpath
+*.project
