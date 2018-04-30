@@ -1,16 +1,3 @@
-2018-04-27 22:32:40,525 INFO  org.openscada.opc.lib.da.Server.connect:106 - Socket timeout: 0 
-2018-04-27 22:32:50,030 INFO  org.openscada.opc.lib.da.Server.connect:140 - Failed to connect to server
-org.jinterop.dcom.common.JIException: Access is denied, please check whether the [domain-username-password] are correct. Also, if not already done please check the GETTING STARTED and FAQ sections in readme.htm. They provide information on how to correctly configure the Windows machine for DCOM access, so as to avoid such exceptions.  [0x00000005]
-	at org.jinterop.dcom.core.JIComServer.init(JIComServer.java:542)
-	at org.jinterop.dcom.core.JIComServer.initialise(JIComServer.java:458)
-	at org.jinterop.dcom.core.JIComServer.<init>(JIComServer.java:427)
-	at org.openscada.opc.lib.da.Server.connect(Server.java:117)
-	at com.freud.opc.utgard.cases.OPCTest2.main(OPCTest2.java:30)
-Caused by: rpc.FaultException: Received fault. (unknown)
-	at rpc.ConnectionOrientedEndpoint.call(ConnectionOrientedEndpoint.java:142)
-	at rpc.Stub.call(Stub.java:112)
-	at org.jinterop.dcom.core.JIComServer.init(JIComServer.java:538)
-	... 4 more
-2018-04-27 22:32:50,050 INFO  org.openscada.opc.lib.da.Server.cleanup:156 - Destroying DCOM session...
-2018-04-27 22:32:50,052 INFO  org.openscada.opc.lib.da.Server.cleanup:177 - Destroying DCOM session... forked
-2018-04-27 22:32:50,079 INFO  org.openscada.opc.lib.da.Server.run:165 - Destructed DCOM session
+2018-04-30 22:06:36,906 INFO  org.openscada.opc.lib.da.Server.connect:106 - Socket timeout: 0 
+2018-04-30 22:06:48,459 INFO  org.openscada.opc.lib.da.Server.cleanup:156 - Destroying DCOM session...
+2018-04-30 22:06:48,461 INFO  org.openscada.opc.lib.da.Server.cleanup:177 - Destroying DCOM session... forked
