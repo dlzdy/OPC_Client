@@ -43,7 +43,7 @@ public class OPCTest1 {
 						Categories.OPCDAServer30 }, new Category[] {});
 
 		for (ClassDetails cds : classDetails) {
-			System.out.println(cds.getProgId() + "=" + cds.getDescription());
+			System.out.println(cds.getProgId() + "-->" + cds.getClsId());
 		}
 
 	}
